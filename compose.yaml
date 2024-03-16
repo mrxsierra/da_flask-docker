@@ -1,0 +1,12 @@
+# Compose.yaml
+version: '1'
+
+services:
+  web:
+    build: .
+    image: data-analysis-flask-docker:v1
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+
